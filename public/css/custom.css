@@ -1,0 +1,426 @@
+/* 
+
+1. Add your custom Css styles below
+2. Place the this code in your template: 
+
+ <link href="css/custom.css" rel="stylesheet">
+
+*//*
+ol {
+    counter-reset: foo;
+    display: table;
+}
+
+.tabs-content > ol > li {
+    padding-left: 3.28571429em;
+    text-indent: -3.28571429em;
+}
+
+ol > li::before {
+    content: counter(foo) ".";
+    display: table-cell;  aha! 
+    text-align: right;
+}*/
+/* fade slider */
+
+.slides {
+    margin:0px auto;
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+.slides ul {
+    list-style:none;
+    position:relative;
+	padding:0px;
+}
+
+
+/* keyframes #anim_slides */
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/* keyframes #anim_tulisan */
+@-webkit-keyframes anim_tulisan {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes anim_tulisan {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:1;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.slides ul li {
+    opacity:0;
+    position:absolute;
+    top:0;
+	
+
+    /* css3 animation */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 48.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 48.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+.slides {
+    opacity:0;
+	
+
+    /* css3 animation */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+#tulisan {
+    opacity:0;
+
+    /* css3 animation */
+    -webkit-animation-name: anim_tulisan;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: anim_tulisan;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+/* css3 delays */
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+    -webkit-animation-delay: 6.0s;
+    -moz-animation-delay: 6.0s;
+}
+.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+    -webkit-animation-delay: 12.0s;
+    -moz-animation-delay: 12.0s;
+}
+.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+    -webkit-animation-delay: 18.0s;
+    -moz-animation-delay: 18.0s;
+}
+.slides ul  li:nth-child(5), .slides ul  li:nth-child(5) div {
+    -webkit-animation-delay: 24.0s;
+    -moz-animation-delay: 24.0s;
+}
+.slides ul  li:nth-child(6), .slides ul  li:nth-child(6) div {
+    -webkit-animation-delay: 30.0s;
+    -moz-animation-delay: 30.0s;
+}
+.slides ul  li:nth-child(7), .slides ul  li:nth-child(7) div {
+    -webkit-animation-delay: 36.0s;
+    -moz-animation-delay: 36.0s;
+}
+.slides ul  li:nth-child(8), .slides ul  li:nth-child(8) div {
+    -webkit-animation-delay: 42.0s;
+    -moz-animation-delay: 42.0s;
+}
+.slides ul li img {
+    display:block;
+}
+
+/* keyframes #anim_titles */
+@-webkit-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+@-moz-keyframes anim_titles {
+    0% {
+        left:100%;
+        opacity:0;
+    }
+    5% {
+        left:10%;
+        opacity:1;
+    }
+    20% {
+        left:10%;
+        opacity:1;
+    }
+    25% {
+        left:100%;
+        opacity:0;
+    }
+    100% {
+        left:100%;
+        opacity:0;
+    }
+}
+.slides ul li img {
+	width: 100%;
+}
+.slides ul li div {
+    //background-color:#000000;
+    //border-radius:10px 10px 10px 10px;
+    //box-shadow:0 0 5px #FFFFFF inset;
+    color:#000;
+    font-size:13px;
+	text-align:center;
+    //left:50%;
+    margin:50px auto 0;
+    //padding:20px;
+    position:absolute;
+    top:70%;
+    width:100%;
+
+    /* css3 animation 
+    -webkit-animation-name: anim_titles;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+
+    -moz-animation-name: anim_titles;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;*/
+}
+#tulisan {	
+	margin-bottom:140px;
+}
+
+#tulisan>p {
+  margin-bottom: 0em; 
+  
+  line-height: 23px;
+  text-align: justify;
+  color:#000;
+  text-justify: inter-word;
+}
+p {
+  color:#000;
+}
+  
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+.footernya {
+    position: fixed;
+    bottom: -100px;
+	background-color:#fff;
+	margin-bottom:0px;
+}
+#header {
+    position: fixed;
+    top: 0;
+	background-color:#fff;
+}
+#page-content{
+    padding: 0px 0 40px 0;
+
+	margin-top:100px;
+	margin-bottom:30px;
+}
+::-webkit-scrollbar {
+display: none;
+} 
+
+.judul-gambar{
+	margin-top:15px;
+	line-height: 100%;
+	text-align : center;
+	font-size:12px; 
+	font-family: 'Times New Roman', Times, serif; 
+	letter-spacing: 2px;
+	background-color:#fff;
+}
+.subjudul-gambar{
+	margin-top:5px;
+	font-size:10px; 
+	color:grey;
+	text-align : center;
+	background-color:#fff;
+}
+.copyrightnya{
+	text-align:left;
+	color:#BEBAB6;
+	font-family: 'Times New Roman', Times, serif; 
+	font-size:10px;
+	height:5px;
+	margin-bottom:20px;
+}
+.alamat{
+	margin-top:30px;
+}
+.alamat>p{
+	text-align:left;
+    font-size: 10px;
+    line-height: 11px;
+    margin-bottom: 0px;
+	
+}
+.judulatas {
+	margin:20px 0px 20px 0px; 
+	height: 100px;
+	padding-bottom:30px; 
+	background-color:#fff;
+}
+#header #header-wrap #logo {
+    float: left;
+    font-size: 28px;
+    position: relative;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+    height: 70px;
+}
+#slides{
+	margin-bottom: 0px; 
+}
+.sidebar {
+    margin-bottom: 0px;
+}
+.judul>a:hover {
+    text-decoration: underline;
+}
+.subjudul-konten{
+	margin-top:10px; 
+	opacity: 1;
+	color:#000;
+	font-size:13px; 
+	font-family: 'Times New Roman', Times, serif;
+	letter-spacing: 1px;
+	
+}
+#tulisan>table p{ 
+
+    margin-bottom: 0em;
+  line-height: 23px;
+	
+	
+}
+
+table {
+    margin-bottom: 0em;
+}
+
+.kelas-td{
+	vertical-align: top;
+	width:40px
+}
+@media (min-width: 992px){
+.container {
+    width: 962px;
+}
+}
