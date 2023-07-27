@@ -27,19 +27,16 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 	<link rel="apple-touch-icon" href="https://dvntns.com//images/logo.png" />
 	<!-- Stylesheets & Fonts --> 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800" rel="stylesheet" type="text/css" /> 
-	<link href="css/plugins.css" rel="stylesheet"> 
+	<link href="{{ asset('frontend/css/plugins.css') }}" rel="stylesheet"> 
+	<link href="{{ asset('frontend/css/style.css') }}" rel="stylesheet"> 
+	<link href="{{ asset('frontend/css/responsive.css') }}" rel="stylesheet"> 
+	<link href="{{ asset('frontend/images/sss/sss.css') }}" rel="stylesheet"> 
+	<link href="{{ asset('frontend/css/CustomSlider.css') }}" rel="stylesheet"/>
+	<link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet"> 
+	<script src="{{ asset('frontend/js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('frontend/js/CustomSlider.js') }}"></script>
+
 <style>
-
-</style>
-	<link href="css/style.css" rel="stylesheet"> 
-	<link href="css/responsive.css" rel="stylesheet"> 
-	<link href="css/custom.css" rel="stylesheet"> 
-	<script src="js/jquery.js"></script>
-	<link href="images/sss/sss.css" rel="stylesheet"> 
-	<link rel="stylesheet" href="css/CustomSlider.css" />
-    <script type="text/javascript" src="js/CustomSlider.js"></script>
-
-	<style>
 /* fade slider */
 
 .slides {
@@ -639,10 +636,10 @@ table {
 
  <!--Plugins-->
 
- <script src="js/plugins.js"></script>
+ <script src="{{ asset('frontend/js/plugins.js') }}"></script>
 
 <!--Template functions-->
- <script src="js/functions.js"></script> 
+ <script src="{{ asset('frontend/js/functions.js') }}"></script> 
 	<script>
 window.onload = function(){ 
 	var tinggi03 = $(".slides").outerHeight(true); 	
