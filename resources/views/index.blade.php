@@ -5,7 +5,8 @@ $judul = array("Language Writing System","River, Time and Space","Beacon of Revi
 $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Terminal, Seoul, 2017","Suncheon Art Platform, 2016","New AARCH, Aarhus, 2016","Varna Public Library, 2015","White Garden’s Arcade, Moscow, 2016","Smart Co-Working Space, Shanghai, 2015","Beersheba Daycare Centre, 2012");
 
 ?>
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1" /> 	 
 	<title>davintanasa+associates</title>
 	<meta property="og:image" content="https://dvntns.com/images/slides/01.jpg" />
@@ -35,14 +36,13 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 	<link href="{{ asset('frontend/css/CustomSlider.css') }}" rel="stylesheet"/>
 	<link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet"> 
 	<script src="{{ asset('frontend/js/jquery.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('frontend/js/CustomSlider.js') }}"></script>
+    <script src="{{ asset('frontend/js/CustomSlider.js') }}" type="text/javascript"></script>
 </head>
 
 <body>
 
     <!-- Wrapper -->
     <div id="wrapper">
-
         <!-- Header -->
         <header id="header" class="header-logo-center header-no-sticky">
             <div id="header-wrap">
@@ -66,29 +66,29 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
                     <div class="content col-md-6"> 
 						<div id="slides">
 							<div class="slides">
-							<div id="mySlider" class="cs-container">
-								<div class="cs-wrapper">
-									<!-- First slide -->
-									<?php 
-									for ($x = 1; $x < 9; $x++) { 
-									$y = $x-1;
-									?>
-										<div class="cs-slide">
-											<img class="cs-image" src="https://dvntns.com/images/slides/0<?php echo $x; ?>.jpg" />
-											
-											<div class="judul-gambar"><?php echo $judul[$y]; ?></div>
-											<div class="subjudul-gambar"><?php echo $subjudul[$y]; ?></div>										
-									</div>
-									<?php
-									} 
-									?>
-									<!-- First slide -->
-									
-									<!-- Other slides here -->
-								</div>
-								<a class="cs-prev"></a>
-								<a class="cs-next"></a>
-							</div>  
+                                <div id="mySlider" class="cs-container">
+                                    <div class="cs-wrapper">
+                                        <!-- First slide -->
+                                        <?php 
+                                        for ($x = 1; $x < 9; $x++) { 
+                                        $y = $x-1;
+                                        ?>
+                                            <div class="cs-slide">
+                                                <img class="cs-image" src="https://dvntns.com/images/slides/0<?php echo $x; ?>.jpg" />
+                                                
+                                                <div class="judul-gambar"><?php echo $judul[$y]; ?></div>
+                                                <div class="subjudul-gambar"><?php echo $subjudul[$y]; ?></div>										
+                                        </div>
+                                        <?php
+                                        } 
+                                        ?>
+                                        <!-- First slide -->
+                                        
+                                        <!-- Other slides here -->
+                                    </div>
+                                    <a class="cs-prev"></a>
+                                    <a class="cs-next"></a>
+                                </div>  
 							</div>  
 						</div>
 						<div id="tulisan" style="display : none;">
@@ -117,7 +117,6 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 							  
 							</table>							
 						</div>
-						
 					</div>
 					<div class="sidebar col-md-3">
                         <div class="pinOnScroll">
@@ -156,94 +155,13 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 
     </div>
     <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
- <script src="{{ asset('frontend/js/plugins.js') }}"></script>
- <script src="{{ asset('frontend/js/functions.js') }}"></script> 
-	<script>
-window.onload = function(){ 
-	var tinggi03 = $(".slides").outerHeight(true); 	
-    var h = window.innerHeight-180;
-	var marginatas = (h-tinggi03)/2-20;
-	document.getElementById("slides").style.marginTop = marginatas + "px";
-};
-function sembunyikan() {
-    var x = document.getElementById("slides");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-    var y = document.getElementById("tulisan");
-    if (y.style.display === "none") {
-        y.style.display = "block";
-    } else {
-        y.style.display = "none";
-    }
-}
-$(document).ready(function(){ // better to use $(document).ready(function(){
-    $('#logo').on('click touchstart', function() {
-		var v = document.getElementById("slides");
-		if (v.style.display === "none") {
-			v.style.display = "block";
-		} else {
-			v.style.display = "none";
-		}
-		var z = document.getElementById("tulisan");
-		if (z.style.display === "none") {
-			z.style.display = "block";
-		} else {
-			z.style.display = "none";
-		}
-    });
-});	
-
-new CustomSlider({
-  sliderId: 'mySlider',
-  displayTime: 12000,
-  transitionEffect: 'fade',
-  transitionDuration: 2,
-  pauseOnHover: true,
-  autoStart: true,
-  useSwipe: true,
-  sideBtnAreaWidth: '50%',
-  sideBtnGradientBG: false,
-  sideBtnOpacity: 0.5,
-  sideBtnHoverOpacity: 0.85,
-  sideBtnTransitionDuration: 0.15,
-  sideBtnArrowColor: '#FFFFFF',
-  sideBtnArrowHeight: 0,
-  sideBtnArrowWidth: 0,
-  sideBtnArrowStrokeWidth: 4,
-  sideBtnBG: 'none',
-  sideBtnBGwidth: 32,
-  sideBtnBGheight: 42,
-  sideBtnBGfilled: true,
-  sideBtnBGcolor: '#000000',
-  sideBtnBGborderRadius: 4,
-  sideBtnBGborderWidth: 0,
-  sideBtnBGborderColor: '#FFFFFF',
-  sideBtnHasShadow: false,
-  sideBtnShadowDeviation: 2,
-  sideBtnShadowOffsetX: 2,
-  sideBtnShadowOffsetY: 2,
-  sideBtnShadowOpacity: 0.4,
-  controlColor: 'rgba(217, 217, 217, 0)',
-  controlHeight: 0,
-  controlSeparation: 0,
-  controlBorderWidth: 0,
-  controlBorderColor: '#000000',
-  activeControlColor: '#878787',
-  activeControlBorderColor: '#000000',
-  controlsVerticalPosition: 'inside',
-  controlsBottomDistance: '5%',
-  controlsTopDistance: '12px',
-  controlsShadow: 'none',
-  controlsShadowDeviation: 1,
-  controlsShadowOffsetX: 1,
-  controlsShadowOffsetY: 1,
-  controlsShadowOpacity: 0.4
-});
-
-	</script>
+    
+    <script src="{{ asset('frontend/js/plugins.js') }}"></script>
+    <script src="{{ asset('frontend/js/functions.js') }}"></script>    
+    <script src="{{ asset('frontend/js/custom.js') }}"></script> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>
