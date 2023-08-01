@@ -238,15 +238,15 @@
 	width: 100%;
 }
 .slides ul li div {
-    //background-color:#000000;
-    //border-radius:10px 10px 10px 10px;
-    //box-shadow:0 0 5px #FFFFFF inset;
+    background-color:#000000;
+    border-radius:10px 10px 10px 10px;
+    box-shadow:0 0 5px #FFFFFF inset;
     color:#000;
     font-size:13px;
 	text-align:center;
-    //left:50%;
+    left:50%;
     margin:50px auto 0;
-    //padding:20px;
+    padding:20px;
     position:absolute;
     top:70%;
     width:100%;

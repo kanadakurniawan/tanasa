@@ -6,37 +6,7 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 
 ?>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1" /> 	 
-	<title>davintanasa+associates</title>
-	<meta property="og:image" content="https://dvntns.com/images/slides/01.jpg" />
-    <meta property="og:image:secure_url" content="https://dvntns.com/images/slides/01.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:alt" content="davintanasa+associates" />
-	<meta NAME="author" CONTENT="davintanasa+associates">
-	<meta NAME="Description" CONTENT="If you would like to contact us, please send an e-mail to this following address: office(at)dvntns.com">
-	<meta NAME="Classification" CONTENT="If you would like to contact us, please send an e-mail to this following address: office(at)dvntns.com">
-	<meta NAME="Geography" CONTENT="Jalan Suprapto IV No.39, Pontianak 78122, Kalimantan barat, Indonesia">
-	<meta NAME="Language" CONTENT="english">
-	<meta NAME="Copyright" CONTENT="davintanasa+associates">
-	<meta NAME="distribution" CONTENT="Global">
-	<meta NAME="zipcode" CONTENT="78116">
-	<meta NAME="city" CONTENT="Pontianak">
-	<meta NAME="country" CONTENT="Indonesia">
-	<link rel="shortcut icon" href="https://dvntns.com//images/logo.png" /> 
-	<link rel="apple-touch-icon" href="https://dvntns.com//images/logo.png" />
-	<!-- Stylesheets & Fonts --> 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800" rel="stylesheet" type="text/css" /> 
-	<link href="{{ asset('frontend/css/plugins.css') }}" rel="stylesheet"> 
-	<link href="{{ asset('frontend/css/style.css') }}" rel="stylesheet"> 
-	<link href="{{ asset('frontend/css/responsive.css') }}" rel="stylesheet"> 
-	<link href="{{ asset('frontend/images/sss/sss.css') }}" rel="stylesheet"> 
-	<link href="{{ asset('frontend/css/CustomSlider.css') }}" rel="stylesheet"/>
-	<link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet"> 
-	<script src="{{ asset('frontend/js/jquery.js') }}"></script>
-    <script src="{{ asset('frontend/js/CustomSlider.js') }}" type="text/javascript"></script>
+	@include('partials.head')
 </head>
 
 <body>
@@ -60,11 +30,33 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
             <div class="container">
                 <div class="row">
                     <!-- Sidebar-->
-                    <div class="sidebar col-md-3">
+                    <div class="sidebar col-md-2">
 					
                     </div>
-                    <div class="content col-md-6"> 
+                    <div class="content col-md-8"> 
 						<div id="slides">
+							<div class="row">
+								@for ($x = 1; $x < 9; $x++)
+								@php
+								$y = $x-1;
+								@endphp
+								<div class="col-3 p-1">
+									<img class="img-fluid" data-toggle="modal" data-target="#exampleModal" src="https://dvntns.com/images/slides/0<?php echo $x; ?>.jpg" />									
+								</div>
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered " role="document">
+									  <div class="modal-content">
+										
+										<div class="modal-body">
+											<img class="img-fluid" src="https://dvntns.com/images/slides/0<?php echo $x; ?>.jpg" />	
+										</div>
+										
+									  </div>
+									</div>
+								  </div>
+								@endfor
+							</div>
+							<div class="col-2"></div>
 							<div class="slides">
                                 <div id="mySlider" class="cs-container">
                                     <div class="cs-wrapper">
@@ -155,13 +147,7 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 
     </div>
     <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
-    
-    <script src="{{ asset('frontend/js/plugins.js') }}"></script>
-    <script src="{{ asset('frontend/js/functions.js') }}"></script>    
-    <script src="{{ asset('frontend/js/custom.js') }}"></script> 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	@include('partials.script-footer')
 </body>
 
 </html>
