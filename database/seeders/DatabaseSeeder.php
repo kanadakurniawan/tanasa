@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\Award;
 use App\Models\Portfolio;
 use Illuminate\Database\Seeder;
 
@@ -77,6 +78,33 @@ class DatabaseSeeder extends Seeder
         Portfolio::create([
             'file_name' => '4-d-taichung',
             'title' => '4-d-taichung'
+        ]);
+
+        
+        Award::create([
+            'file_name' => 'a-jonusas-radvilla',
+            'title' => 'Jonušas Radvila Palace Art Museum',
+            'subtitle' => 'Vilnius, 2021 [Finalist]'
+        ]);
+        Award::create([
+            'file_name' => 'b-dayang',
+            'title' => 'DaYang Mountain Traffic System',
+            'subtitle' => 'SuZhou, 2018 [Finalist]'
+        ]);
+        Award::create([
+            'file_name' => 'c-yeouinaru',
+            'title' => 'Yeouinaru Ferry Terminal',
+            'subtitle' => 'Seoul, 2017 [3rd Prize]'
+        ]);
+        Award::create([
+            'file_name' => 'd-language',
+            'title' => 'Museum of World Writing',
+            'subtitle' => 'SongDo, 2017 [4th Prize]'
+        ]);
+        Award::create([
+            'file_name' => 'e-varna',
+            'title' => 'Varna Public Library, 2015',
+            'subtitle' => '[Finalist]'
         ]);
     }
 }
