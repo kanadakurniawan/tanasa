@@ -407,3 +407,20 @@ table {
     width: 962px;
 }
 }
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 0px;
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0px 0px #fff;
+    box-shadow: 0 0px 0px #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    outline: 0
+}
+/* .modal-backdrop {
+    display: true;
+  } */
+.modal-backdrop {background-color:rgb(255, 255, 255);opacity:0.5 !important;}

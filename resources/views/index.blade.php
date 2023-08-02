@@ -35,53 +35,20 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
                     </div>
                     <div class="content col-md-8"> 
 						<div id="slides">
+							<!-- Button trigger modal -->
+
 							<div class="row">
 								@for ($x = 1; $x < 9; $x++)
 								@php
 								$y = $x-1;
 								@endphp
 								<div class="col-3 p-1">
-									<img class="img-fluid" data-toggle="modal" data-target="#exampleModal" src="https://dvntns.com/images/slides/0<?php echo $x; ?>.jpg" />									
+									<img class="img-fluid" data-toggle="modal" data-target="#exampleModal{{ $x }}" src="frontend/images/slides/0{{ $x }}.jpg" />									
 								</div>
-								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-									<div class="modal-dialog modal-dialog-centered " role="document">
-									  <div class="modal-content">
-										
-										<div class="modal-body">
-											<img class="img-fluid" src="https://dvntns.com/images/slides/0<?php echo $x; ?>.jpg" />	
-										</div>
-										
-									  </div>
-									</div>
-								  </div>
 								@endfor
 							</div>
 							<div class="col-2"></div>
-							<div class="slides">
-                                <div id="mySlider" class="cs-container">
-                                    <div class="cs-wrapper">
-                                        <!-- First slide -->
-                                        <?php 
-                                        for ($x = 1; $x < 9; $x++) { 
-                                        $y = $x-1;
-                                        ?>
-                                            <div class="cs-slide">
-                                                <img class="cs-image" src="https://dvntns.com/images/slides/0<?php echo $x; ?>.jpg" />
-                                                
-                                                <div class="judul-gambar"><?php echo $judul[$y]; ?></div>
-                                                <div class="subjudul-gambar"><?php echo $subjudul[$y]; ?></div>										
-                                        </div>
-                                        <?php
-                                        } 
-                                        ?>
-                                        <!-- First slide -->
-                                        
-                                        <!-- Other slides here -->
-                                    </div>
-                                    <a class="cs-prev"></a>
-                                    <a class="cs-next"></a>
-                                </div>  
-							</div>  
+							
 						</div>
 						<div id="tulisan" style="display : none;">
 							<p class="subjudul-konten">curriculum vitae</p> 
@@ -148,6 +115,21 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
     </div>
     <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
 	@include('partials.script-footer')
+	@for ($x = 1; $x < 9; $x++)
+	@php
+	$y = $x-1;
+	@endphp						
+	<div class="modal fade" data-bs-backdrop="true" id="exampleModal{{ $x }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered " role="document">
+			<div class="modal-content shadow-none">
+				<div class="modal-body">
+					<img class="img-fluid" src="frontend/images/slides/0{{ $x }}.jpg" />	
+					<div class="text-center p-2"><small>judul</small></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@endfor
 </body>
 
 </html>

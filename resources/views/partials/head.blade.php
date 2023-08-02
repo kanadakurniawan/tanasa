@@ -24,8 +24,8 @@
 	<link href="{{ asset('frontend/css/plugins.css') }}" rel="stylesheet"> 
 	<link href="{{ asset('frontend/css/style.css') }}" rel="stylesheet"> 
 	<link href="{{ asset('frontend/css/responsive.css') }}" rel="stylesheet"> 
-	<link href="{{ asset('frontend/images/sss/sss.css') }}" rel="stylesheet"> 
-	<link href="{{ asset('frontend/css/CustomSlider.css') }}" rel="stylesheet"/>
+	{{-- <link href="{{ asset('frontend/images/sss/sss.css') }}" rel="stylesheet">  --}}
+	{{-- <link href="{{ asset('frontend/css/CustomSlider.css') }}" rel="stylesheet"/> --}}
 	<link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet"> 
 	<script src="{{ asset('frontend/js/jquery.js') }}"></script>
-    <script src="{{ asset('frontend/js/CustomSlider.js') }}" type="text/javascript"></script>
+    {{-- <script src="{{ asset('frontend/js/CustomSlider.js') }}" type="text/javascript"></script> --}}
