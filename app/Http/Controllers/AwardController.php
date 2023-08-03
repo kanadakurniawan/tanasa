@@ -13,7 +13,8 @@ class AwardController extends Controller
      */
     public function index()
     {
-        //
+        $dataFaqs = Award::all();
+        return view('dashboard.faq.index', compact('dataFaqs'));
     }
 
     /**
@@ -21,7 +22,7 @@ class AwardController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.faq.create');
     }
 
     /**
@@ -29,7 +30,13 @@ class AwardController extends Controller
      */
     public function store(StoreAwardRequest $request)
     {
-        //
+        $request->validate([
+            'pertanyaan' => 'required',
+            'jawaban' => 'required',
+        ]);
+  
+        Award::create($request->all());
+        return redirect()->route('faq.index')->with('success','FAQ berhasil ditambahkan.');
     }
 
     /**
@@ -45,7 +52,7 @@ class AwardController extends Controller
      */
     public function edit(Award $award)
     {
-        //
+        return view('dashboard.faq.edit',compact('faq'));
     }
 
     /**
@@ -53,7 +60,13 @@ class AwardController extends Controller
      */
     public function update(UpdateAwardRequest $request, Award $award)
     {
-        //
+        $request->validate([
+            'pertanyaan' => 'required',
+            'jawaban' => 'required',
+        ]);
+  
+        $award->update($request->all());
+        return redirect()->route('faq.index')->with('success','FAQ berhasil di edit.');
     }
 
     /**
@@ -61,6 +74,7 @@ class AwardController extends Controller
      */
     public function destroy(Award $award)
     {
-        //
+        $award->delete();
+        return redirect()->route('faq.index')->with('success','FAQ berhasil dihapus.');
     }
 }

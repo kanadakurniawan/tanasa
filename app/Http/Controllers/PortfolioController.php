@@ -5,15 +5,24 @@ namespace App\Http\Controllers;
 use App\Models\Portfolio;
 use App\Http\Requests\StorePortfolioRequest;
 use App\Http\Requests\UpdatePortfolioRequest;
+use App\Models\Award;
 
 class PortfolioController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+    public function home()
+    {
+        $dataPortfolio = Portfolio::all();
+        $dataAward = Award::all();
+        return view('index', compact('dataPortfolio','dataAward'));
+    }
+
     public function index()
     {
-        //
+        $dataFaqs = Portfolio::all();
+        return view('dashboard.faq.index', compact('dataFaqs'));
     }
 
     /**
@@ -21,7 +30,7 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.faq.create');
     }
 
     /**
@@ -29,7 +38,13 @@ class PortfolioController extends Controller
      */
     public function store(StorePortfolioRequest $request)
     {
-        //
+        $request->validate([
+            'pertanyaan' => 'required',
+            'jawaban' => 'required',
+        ]);
+  
+        Portfolio::create($request->all());
+        return redirect()->route('faq.index')->with('success','FAQ berhasil ditambahkan.');
     }
 
     /**
@@ -45,7 +60,7 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
-        //
+        return view('dashboard.faq.edit',compact('faq'));
     }
 
     /**
@@ -53,7 +68,13 @@ class PortfolioController extends Controller
      */
     public function update(UpdatePortfolioRequest $request, Portfolio $portfolio)
     {
-        //
+        $request->validate([
+            'pertanyaan' => 'required',
+            'jawaban' => 'required',
+        ]);
+  
+        $portfolio->update($request->all());
+        return redirect()->route('faq.index')->with('success','FAQ berhasil di edit.');
     }
 
     /**
@@ -61,6 +82,7 @@ class PortfolioController extends Controller
      */
     public function destroy(Portfolio $portfolio)
     {
-        //
+        $portfolio->delete();
+        return redirect()->route('faq.index')->with('success','FAQ berhasil dihapus.');
     }
 }
