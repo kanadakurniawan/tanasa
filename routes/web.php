@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Portfolio;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PortfolioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+Route::controller(PortfolioController::class)->name('home.')->group(function () {
+    Route::get('/', 'home')->name('index');
 });
