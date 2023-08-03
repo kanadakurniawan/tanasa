@@ -86,46 +86,14 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 				</div>	
 			</div>	
         </section>
-			<section id="page-content" class="sidebar-both footernya">
-			<div class="container">
-				<div class="row">
-                    <div class="sidebar col-md-3">
-					
-                    </div>
-					<div  class="content col-md-6">
-						<div>
-							<div class="alamat">
-								<p>Jl Suprapto IV No 38, Pontianak 78122, KalBar, Indonesia | Contact email: office(at)tanasa.com</p>
-							</div>
-							<div class="copyrightnya">
-								(c) Davin Tanasa & Associates. 
-							</div>
-						</div>
-					</div>
-					<div class="sidebar col-md-3">
-                        <div class="pinOnScroll">
-
-                        </div>
-                    </div>
-				</div>
-            </div>
-        </section>
+	
+	@include('partials.footer')
 
     </div>
     <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
 	@include('partials.script-footer')
-	@foreach ($dataPortfolio as $index => $portfolio)					
-	<div class="modal fade" data-bs-backdrop="true" id="exampleModal{{ ++$index }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered " role="document">
-			<div class="modal-content shadow-none">
-				<div class="modal-body">
-					<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" />	
-					<div class="text-center p-2"><small>{{ $portfolio->title }}</small></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	@endforeach
+	@include('partials.modal')
+
 </body>
 
 </html>
