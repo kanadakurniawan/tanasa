@@ -373,13 +373,8 @@ display: none;
 	letter-spacing: 1px;
 	
 }
-#tulisan>table p{  
-  font-size: 13px;
-
-    margin-bottom: 0em;
-  line-height: 23px;
-	
-	
+#tulisan p{  
+    margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;font-size:13px;font-family:"Calibri",sans-serif;line-height:150%;
 }
 
 table {
