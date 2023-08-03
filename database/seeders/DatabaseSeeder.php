@@ -17,67 +17,67 @@ class DatabaseSeeder extends Seeder
     {
         Portfolio::create([
             'file_name' => '1-a-jonusas',
-            'title' => '1-a-jonusas'
+            'title' => 'Jonusas'
         ]);
         Portfolio::create([
             'file_name' => '1-b-vilnius',
-            'title' => '1-b-vilnius'
+            'title' => 'Vilnius'
         ]);
         Portfolio::create([
             'file_name' => '1-c-white-arcade',
-            'title' => '1-c-white-arcade'
+            'title' => 'White Arcade'
         ]);
         Portfolio::create([
             'file_name' => '1-d-losbastes',
-            'title' => '1-d-losbastes'
+            'title' => 'Losbastes'
         ]);
         Portfolio::create([
             'file_name' => '2-a-cheongju',
-            'title' => '2-a-cheongju'
+            'title' => 'Cheongju'
         ]);
         Portfolio::create([
             'file_name' => '2-b-varna',
-            'title' => '2-b-varna'
+            'title' => 'Varna'
         ]);
         Portfolio::create([
             'file_name' => '2-c-songdo',
-            'title' => '2-c-songdo'
+            'title' => 'Songdo'
         ]);
         Portfolio::create([
             'file_name' => '2-d-ljubljana',
-            'title' => '2-d-ljubljana'
+            'title' => 'Ljubljana'
         ]);
         Portfolio::create([
             'file_name' => '3-a-songdo',
-            'title' => '3-a-songdo'
+            'title' => 'Songdo'
         ]);
         Portfolio::create([
             'file_name' => '3-b-tripoli',
-            'title' => '3-b-tripoli'
+            'title' => 'Tripoli'
         ]);
         Portfolio::create([
             'file_name' => '3-c-yeouinaru',
-            'title' => '3-c-yeouinaru'
+            'title' => 'Yeouinaru'
         ]);
         Portfolio::create([
             'file_name' => '3-d-beersheba',
-            'title' => '3-d-beersheba'
+            'title' => 'Beersheba'
         ]);
         Portfolio::create([
             'file_name' => '4-a-suncheon',
-            'title' => '4-a-suncheon'
+            'title' => 'Suncheon'
         ]);
         Portfolio::create([
             'file_name' => '4-b-songdo',
-            'title' => '4-b-songdo'
+            'title' => 'Songdo'
         ]);
         Portfolio::create([
             'file_name' => '4-c-aarhus',
-            'title' => '4-c-aarhus'
+            'title' => 'Aarhus'
         ]);
         Portfolio::create([
             'file_name' => '4-d-taichung',
-            'title' => '4-d-taichung'
+            'title' => 'Taichung'
         ]);
 
         
