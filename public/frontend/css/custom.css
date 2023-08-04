@@ -373,7 +373,7 @@ display: none;
 	letter-spacing: 1px;
 	
 }
-#tulisan p{  
+#tulisan ,.tulisan p{  
     margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;font-size:13px;font-family:"Calibri",sans-serif;line-height:150%;
 }
 
@@ -414,3 +414,7 @@ table {
     display: true;
   } */
 .modal-backdrop {background-color:rgb(255, 255, 255);opacity:0.5 !important;}
+.row .award p{
+    font-size: 9px;
+    line-height: 11px;
+}
