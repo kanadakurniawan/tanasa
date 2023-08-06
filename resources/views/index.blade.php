@@ -47,7 +47,7 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 						</div>
 						<div id="tulisan" style="display : none;">
 							<div class="row text-justify">
-								<div class="col-5 tulisan px-2">
+								<div class="col-lg-5 tulisan px-2">
 									<p><strong>Profile</strong></p>
 									<p>Davin Tanasa attained Master of Architecture at University of Melbourne in 2010. Prior to office establishment in 2015, worked at various offices in Melbourne, Singapore and Shanghai. Worked at Arata Isozaki 磯崎新 + HuQian 胡倩 Partners on the construction of Harbin Music Hall in 2014. &nbsp;</p>
 									<p>In 2017 awarded 3rd Prize for &lsquo;Yeouinaru Ferry Terminal&rsquo; in Seoul, jury chaired by Alejandro Zaera-Polo and Ryue Nishizawa 西沢立衛; and awarded 4th Prize for &lsquo;National Museum of World Writing&rsquo; in Songdo, jury chaired by Odile Decq. &nbsp;</p>
@@ -58,8 +58,13 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 								<div class="col-7">
 									<div class="row">
 										@foreach ($dataAward as $index => $award)
-										<div class="col-6 p-2">
-											<img class="img-fluid mb-1" data-toggle="modal" data-target="#exampleModal{{ ++$index }}" src="frontend/images/award/{{ $award->file_name }}.jpg" />
+										<div class="awardthumbnail col-6 p-2">
+											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ ++$index }})" />
+											<div class="award text-center p-0 mb-1"><p class="m-0">{{ $award->title }}</p></div>
+											<div class="award text-center p-0"><p class="m-1">{{ $award->subtitle }}</p></div>									
+										</div>
+										<div class="award{{ $index }} col-12 p-2" style="display : none;">
+											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
 											<div class="award text-center p-0 mb-1"><p class="m-0">{{ $award->title }}</p></div>
 											<div class="award text-center p-0"><p>{{ $award->subtitle }}</p></div>									
 										</div>
@@ -88,6 +93,7 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
     <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
 	@include('partials.script-footer')
 	@include('partials.modal')
+	
 
 </body>
 

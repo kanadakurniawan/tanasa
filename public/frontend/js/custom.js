@@ -81,3 +81,24 @@ new CustomSlider({
   controlsShadowOffsetY: 1,
   controlsShadowOpacity: 0.4
 });
+function sembunyikanAward(w) {
+    
+    var elmsx = document.getElementsByClassName("awardthumbnail");
+    Array.from(elmsx).forEach((x) => {
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+    })
+    var z = "award"+w;
+    var elmsy = document.getElementsByClassName(z);
+    Array.from(elmsy).forEach((y) => {
+        if (y.style.display === "none") {
+          y.style.display = "block";
+        } else {
+          y.style.display = "none";
+        }
+    })
+
+}
