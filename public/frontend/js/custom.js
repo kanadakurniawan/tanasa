@@ -1,22 +1,28 @@
-window.onload = function(){ 
-	var tinggi03 = $(".slides").outerHeight(true); 	
-    var h = window.innerHeight-180;
-	var marginatas = (h-tinggi03)/2-20;
-	document.getElementById("slides").style.marginTop = marginatas + "px";
-};
+// window.onload = function(){ 
+// 	var tinggi03 = $(".slides").outerHeight(true); 	
+//     var h = window.innerHeight-180;
+// 	var marginatas = (h-tinggi03)/2-20;
+// 	document.getElementById("slides").style.marginTop = marginatas + "px";
+// };
 function sembunyikan() {
-    var x = document.getElementById("slides");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-    var y = document.getElementById("tulisan");
-    if (y.style.display === "none") {
-        y.style.display = "block";
-    } else {
-        y.style.display = "none";
-    }
+    var x = 2000;
+    $('#slides').each(function(index) {
+        if ($(this).css('display') == 'none') {
+            $(this).fadeIn(x);
+        }
+        else {
+            $(this).hide();
+        }
+    });   
+
+    $('#tulisan').each(function(index) {
+        if ($(this).css('display') == 'none') {
+            $(this).fadeIn(x);
+        }
+        else {
+            $(this).hide();
+        }
+    });   
 }
 $(document).ready(function(){ // better to use $(document).ready(function(){
     $('#logo').on('click touchstart', function() {
@@ -81,24 +87,26 @@ new CustomSlider({
   controlsShadowOffsetY: 1,
   controlsShadowOpacity: 0.4
 });
-function sembunyikanAward(w) {
-    
-    var elmsx = document.getElementsByClassName("awardthumbnail");
-    Array.from(elmsx).forEach((x) => {
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-    })
-    var z = "award"+w;
-    var elmsy = document.getElementsByClassName(z);
-    Array.from(elmsy).forEach((y) => {
-        if (y.style.display === "none") {
-          y.style.display = "block";
-        } else {
-          y.style.display = "none";
-        }
-    })
 
+
+function sembunyikanAward(w) {
+    var z = ".award"+w;
+    var x = 2000;
+    $(z).each(function(index) {
+        if ($(this).css('display') == 'none') {
+            $(this).fadeIn(x);
+        }
+        else {
+            $(this).hide();
+        }
+    });
+
+    $('.awardthumbnail').each(function(index) {
+        if ($(this).css('display') == 'none') {
+            $(this).fadeIn(x);
+        }
+        else {
+            $(this).hide();
+        }
+    });    
 }

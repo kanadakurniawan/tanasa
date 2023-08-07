@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-$judul = array("Language Writing System","River, Time and Space","Beacon of Revival","The Uncharted Network","Heart of Books","The Platform","Network Space","Field of Oases");  
-$subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Terminal, Seoul, 2017","Suncheon Art Platform, 2016","New AARCH, Aarhus, 2016","Varna Public Library, 2015","White Garden’s Arcade, Moscow, 2016","Smart Co-Working Space, Shanghai, 2015","Beersheba Daycare Centre, 2012");
-
-?>
 <head>
 	@include('partials.head')
 </head>
@@ -18,7 +13,7 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
             <div id="header-wrap">
                 <div class="container"> 
                     <div  class="judulatas" onclick="sembunyikan()" id="logo">
-                        <div class="judul" style="font-family: 'Times New Roman', Times, serif; font-size:14px; margin:auto; padding:auto;letter-spacing: 3px;"><a style="margin-left:-10px" href="#">TANASA & ASSOCIATES</a></div>
+                        <div class="judul"><a href="#">TANASA & ASSOCIATES</a></div>
                     </div>
                 </div>
             </div>
@@ -39,7 +34,7 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 							<div class="row">
 								@foreach ($dataPortfolio as $index => $portfolio)
 								<div class="col-3 p-1">
-									<img class="img-fluid" data-toggle="modal" data-target="#exampleModal{{ ++$index }}" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" />									
+									<img class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal{{ ++$index }}" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" />									
 								</div>
 								@endforeach
 							</div>
@@ -55,10 +50,11 @@ $subjudul = array("Museum of World Writing, Songdo, 2017","Yeoinaru Ferry Termin
 									<p>Lu Sheng / 卢生, Associate Partner</p>			
 
 								</div>
-								<div class="col-7">
+								<div class="col-lg-7">
+										<p><strong>Profile</strong></p>
 									<div class="row">
 										@foreach ($dataAward as $index => $award)
-										<div class="awardthumbnail col-6 p-2">
+										<div class="awardthumbnail col-lg-6 p-2">
 											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ ++$index }})" />
 											<div class="award text-center p-0 mb-1"><p class="m-0">{{ $award->title }}</p></div>
 											<div class="award text-center p-0"><p class="m-1">{{ $award->subtitle }}</p></div>									

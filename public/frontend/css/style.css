@@ -284,7 +284,8 @@ body {
   line-height: 1.65714286em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  /* font-family: "Open Sans", "Helvetica", "Arial", sans-serif; */
+  font-family: Garamond, serif;
   color: #565656;
   font-weight: 400; }
 
@@ -300,7 +301,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+  font-family: Garamond, serif;
+  /* font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif; */
   color: #252525;
   margin: 0;
   font-weight: 300;
@@ -396,7 +398,8 @@ h6,
     font-size: 1.35714286em;
     line-height: 1.68421053em; } }
 p {
-  font-family: "Open Sans";
+  font-family: Garamond, serif;
+  /* font-family: "Open Sans"; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -13330,7 +13333,7 @@ footer.background-grey .copyright-content {
   position: relative; }
   .widget .widget-title,
   .widget > h4 {
-    font-family: "Open Sans";
+    font-family: Garamond, serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
