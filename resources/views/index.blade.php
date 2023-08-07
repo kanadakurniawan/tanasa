@@ -51,8 +51,9 @@
 
 								</div>
 								<div class="col-lg-7">
-										<p class="judul2 mb-0"><strong>Profile</strong></p>
+									<div class="row"><p class="judul2 mb-0 px-2"><strong>Competition Awards</strong></p></div>
 									<div class="row">
+										
 										@foreach ($dataAward as $index => $award)
 										<div class="awardthumbnail col-lg-6 p-2">
 											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ ++$index }})" />
