@@ -110,3 +110,24 @@ function sembunyikanAward(w) {
         }
     });    
 }
+function sembunyikanPorto(w) {
+    var z = ".porto"+w;
+    var x = 2000;
+    $(z).each(function(index) {
+        if ($(this).css('display') == 'none') {
+            $(this).fadeIn(x);
+        }
+        else {
+            $(this).hide();
+        }
+    });
+
+    $('.portothumbnail').each(function(index) {
+        if ($(this).css('display') == 'none') {
+            $(this).fadeIn(x);
+        }
+        else {
+            $(this).hide();
+        }
+    });    
+}

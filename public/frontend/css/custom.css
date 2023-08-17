@@ -293,7 +293,7 @@ a:hover, a:focus, a:active {
 }
 .footernya {
     position: fixed;
-    bottom: -100px;
+    bottom: 0px;
 	background-color:#fff;
 	margin-bottom:0px;
 }
@@ -336,7 +336,7 @@ display: none;
 	height:5px;
 	margin-bottom:20px;
 }
-.alamat>p{
+.alamat p{
     font-size: 10px;
     margin-bottom: 0px;
     line-height: 200%;
@@ -365,9 +365,12 @@ display: none;
 .judul>a:hover {
     text-decoration: underline;
 }
+.judul>a:focus  {
+    text-decoration: none;
+}
 .judul>a{
     font-size:12px; margin:auto; padding:auto;letter-spacing: 3px;
-    font-weight: bold;
+    font-weight: 900;
 }
 .subjudul-konten{
 	margin-top:10px; 
@@ -427,9 +430,12 @@ table {
     font-size: 9px;
     line-height: 11px;
 }
+.judul-portofolio>small{
+    color: #000;
+}
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
+    #tulisan ,.tulisan p{  
+        font-size:11px;
     }
 }

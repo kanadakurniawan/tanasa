@@ -1,15 +1,15 @@
-<section class="sidebar-both footernya">
+<section class="sidebar-both footernya pt-1 pb-1">
     <div class="container">
-        <div class="row mb-3">
+        <div class="row mb-0">
             <div class="sidebar col-md-2">
             
             </div>
-            <div  class="content col-md-8">
-                <div>
-                    <div class="alamat text-center">
+            <div  class="content col-md-8 mb-0">
+                <div class="alamat text-center">
+                    <div class="lh-0">
                         <p>Jl Suprapto IV No 38, Pontianak 78122, KalBar, Indonesia | Contact email: office(at)tanasa.com</p>
                     </div>
-                    <div class="alamat text-center">
+                    <div class="mb-1 pt-2">
                         <p>© Davin Tanasa & Associates.</p>
                     </div>
                 </div>
