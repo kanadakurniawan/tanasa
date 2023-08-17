@@ -1,4 +1,4 @@
-<section id="page-content" class="sidebar-both footernya">
+<section class="sidebar-both footernya">
     <div class="container">
         <div class="row mb-3">
             <div class="sidebar col-md-2">

@@ -339,6 +339,7 @@ display: none;
 .alamat>p{
     font-size: 10px;
     margin-bottom: 0px;
+    line-height: 200%;
 	
 }
 .judulatas {
@@ -425,4 +426,10 @@ table {
 .row .award p{
     font-size: 9px;
     line-height: 11px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
 }

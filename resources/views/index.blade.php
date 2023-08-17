@@ -21,7 +21,7 @@
         <!-- end: Header -->
 
         <!-- Content -->
-        <section id="page-content" class="sidebar-both">
+        <section id="page-content" class="sidebar-both pb-0">
             <div class="container">
                 <div class="row">
                     <!-- Sidebar-->
