@@ -369,7 +369,7 @@ display: none;
     text-decoration: none;
 }
 .judul>a{
-    font-size:13px; margin:auto; padding:auto;letter-spacing: 2px;
+    font-size:13px; margin:auto; padding:auto;letter-spacing: 1px;
     font-weight: 900;
 }
 #header #header-wrap {
