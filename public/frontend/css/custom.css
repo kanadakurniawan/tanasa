@@ -369,8 +369,12 @@ display: none;
     text-decoration: none;
 }
 .judul>a{
-    font-size:12px; margin:auto; padding:auto;letter-spacing: 3px;
+    font-size:13px; margin:auto; padding:auto;letter-spacing: 2px;
     font-weight: 900;
+}
+#header #header-wrap {
+    border-bottom: 0px solid #eeeeee;
+    /*logo*/
 }
 .subjudul-konten{
 	margin-top:10px; 
