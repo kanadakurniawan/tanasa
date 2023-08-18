@@ -12,8 +12,8 @@
         <header id="header" class="header-logo-center header-no-sticky">
             <div id="header-wrap">
                 <div class="container"> 
-                    <div  class="judulatas mt-3" onclick="sembunyikan()" id="logo">
-                        <div class="judul"><a href="#">TANASA & ASSOCIATES</a></div>
+                    <div  class="judulatas mt-4" onclick="sembunyikan()" id="logo">
+                        <div class="judul"><a href="#"><strong>TANASA & ASSOCIATES</strong></a></div>
                     </div>
                 </div>
             </div>
