@@ -38,7 +38,7 @@
 								</div>
 								@endforeach --}}
 								@foreach ($dataPortfolio as $index => $portfolio)
-								<div class="portothumbnail col-3 p-2">
+								<div class="portothumbnail col-3 p-3">
 									<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ ++$index }})" />								
 								</div>
 								<div class="porto{{ $index }} col-12 p-2" style="display : none;">
