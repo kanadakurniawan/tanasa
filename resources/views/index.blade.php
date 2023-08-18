@@ -25,10 +25,10 @@
             <div class="container">
                 <div class="row mt-5">
                     <!-- Sidebar-->
-                    <div class="sidebar col-md-2">
+                    <div class="sidebar col-md-1">
 					
                     </div>
-                    <div class="content col-md-8"> 
+                    <div class="content col-md-10"> 
 						<div id="slides">
 							<!-- Button trigger modal -->
 							<div class="row">
@@ -82,7 +82,7 @@
 						</div>
 					</div>
 					
-					<div class="col-2"></div>
+					<div class="col-1"></div>
 					<div class="sidebar col-md-3">
                         <div class="pinOnScroll">
 
