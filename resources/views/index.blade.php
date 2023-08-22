@@ -22,7 +22,7 @@
 
         <!-- Content -->
         <section id="page-content" class="sidebar-both pb-0">
-            <div class="container">
+            <div class="container mt-3">
                 <div class="row mt-5">
                     <!-- Sidebar-->
                     <div class="sidebar col-md-1">
@@ -41,9 +41,13 @@
 								<div class="portothumbnail col-3 p-3">
 									<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ ++$index }})" />								
 								</div>
-								<div class="porto{{ $index }} col-12 p-2" style="display : none;">
-									<img class="img-fluid mb-1" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ $index }})"/>									
-									<div class="text-center p-2 judul-portofolio">{{ $portfolio->title }}</div>							
+								<div class="porto{{ $index }} row p-2" style="display : none;">
+									<div class="col-1"></div>
+									<div class="col-10">
+										<img class="img-fluid mb-1" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ $index }})"/>									
+										<div class="text-center p-2 judul-portofolio">{{ $portfolio->title }}</div>			
+									</div>
+									<div class="col-1"></div>
 								</div>
 								@endforeach
 							</div>
