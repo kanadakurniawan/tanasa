@@ -54,7 +54,7 @@
 							
 						</div>
 						<div id="tulisan" style="display : none;">
-							<div class="row text-justify">
+							<div class="row text-justify mt-1">
 								<div class="col-lg-5 tulisan px-2">
 									<p class="judul2 pb-1"><strong>Profile</strong></p>
 									<p class="pb-1">Davin Tanasa attained Master of Architecture at University of Melbourne in 2010. Prior to office establishment in 2015, worked at various offices in Melbourne, Singapore and Shanghai. Worked at Arata Isozaki 磯崎新 + HuQian 胡倩 Partners on the construction of Harbin Music Hall in 2014. &nbsp;</p>
