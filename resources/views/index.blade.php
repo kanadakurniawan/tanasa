@@ -22,8 +22,8 @@
 
         <!-- Content -->
         <section id="page-content" class="sidebar-both pb-0">
-            <div class="container mt-3">
-                <div class="row mt-5">
+            <div class="container mt-3 mt-md-0">
+                <div class="row mt-5 mt-sm-2">
                     <!-- Sidebar-->
                     <div class="sidebar col-md-1">
 					

@@ -28,4 +28,37 @@
 	{{-- <link href="{{ asset('frontend/css/CustomSlider.css') }}" rel="stylesheet"/> --}}
 	<link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet"> 
 	<script src="{{ asset('frontend/js/jquery.js') }}"></script>
-    {{-- <script src="{{ asset('frontend/js/CustomSlider.js') }}" type="text/javascript"></script> --}}
+	<script>
+	$(document).ready(function(){
+		document.onkeydown = function(evt) {
+			evt = evt || window.event;
+			var isEscape = false;
+			if ("key" in evt) {
+				isEscape = (evt.key === "Escape" || evt.key === "Esc");
+			} else {
+				isEscape = (evt.keyCode === 27);
+			}
+			if (isEscape) {
+				z = $.cookie("z");
+				x = $.cookie("x");
+				$(z).each(function(index) {
+					if ($(this).css('display') == 'none') {
+						$(this).fadeIn(x);
+					}
+					else {
+						$(this).hide();
+					}
+				});
+
+				$('.portothumbnail').each(function(index) {
+					if ($(this).css('display') == 'none') {
+						$(this).fadeIn(x);
+					}
+					else {
+						$(this).hide();
+					}
+				});  
+			}
+		};
+	});
+	</script>

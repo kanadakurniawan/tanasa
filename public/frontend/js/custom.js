@@ -113,6 +113,8 @@ function sembunyikanAward(w) {
 function sembunyikanPorto(w) {
     var z = ".porto"+w;
     var x = 2000;
+    $.cookie("z", z);
+    $.cookie("x", x);
     $(z).each(function(index) {
         if ($(this).css('display') == 'none') {
             $(this).fadeIn(x);
@@ -129,5 +131,8 @@ function sembunyikanPorto(w) {
         else {
             $(this).hide();
         }
-    });    
-}
+    });   
+} 
+
+
+    
