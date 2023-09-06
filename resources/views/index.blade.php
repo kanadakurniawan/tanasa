@@ -12,7 +12,7 @@
         <header id="header" class="header-logo-center header-no-sticky">
             <div id="header-wrap">
                 <div class="container pt-1"> 
-                    <div  class="judulatas mt-5" onclick="sembunyikan()" id="logo">
+                    <div  class="judulatas mt-5 text-center" onclick="sembunyikan()">
                         <div class="judul"><a href="#"><strong>TANASA & ASSOCIATES</strong></a></div>
                     </div>
                 </div>
@@ -22,8 +22,8 @@
 
         <!-- Content -->
         <section id="page-content" class="sidebar-both pb-0">
-            <div class="container mt-3 mt-md-0">
-                <div class="row mt-5 mt-sm-2">
+            <div class="container mt-3 ">
+                <div class="row mt-5 pt-3">
                     <!-- Sidebar-->
                     <div class="sidebar col-md-1">
 					
@@ -55,33 +55,34 @@
 						</div>
 						<div id="tulisan" style="display : none;">
 							<div class="row text-justify mt-1">
-								<div class="col-lg-5 tulisan px-2">
+								<div class="awardthumbnail col-12 tulisan px-2">
 									<p class="judul2 pb-1"><strong>Profile</strong></p>
 									<p class="pb-1">Davin Tanasa attained Master of Architecture at University of Melbourne in 2010. Prior to office establishment in 2015, worked at various offices in Melbourne, Singapore and Shanghai. Worked at Arata Isozaki 磯崎新 + HuQian 胡倩 Partners on the construction of Harbin Music Hall in 2014. &nbsp;</p>
-									<p class="pb-1">In 2017 awarded 3rd Prize for &lsquo;Yeouinaru Ferry Terminal&rsquo; in Seoul, jury chaired by Alejandro Zaera-Polo and Ryue Nishizawa 西沢立衛; and awarded 4th Prize for &lsquo;National Museum of World Writing&rsquo; in Songdo, jury chaired by Odile Decq. &nbsp;</p>									
+									<p class="pb-1">In 2017 awarded 3rd Prize for &lsquo;Yeouinaru Ferry Terminal&rsquo; in Seoul, jury chaired by Alejandro Zaera-Polo and Ryue Nishizawa 西沢立衛; and awarded 4th Prize for &lsquo;National Museum of World Writing&rsquo; in Songdo, jury chaired by Odile Decq. &nbsp;</p>	
+									<p class="judul2 pb-1"><strong>Competition Awards</strong></p>
+									
+									<div class="row px-2">
+										
+										@foreach ($dataAward as $index => $award)
+										<div class="col p-2">
+											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ ++$index }})" />
+											<div class="award text-center p-0 mb-1"><p class="m-0">{{ $award->title }}</p></div>
+											{{-- <div class="award text-center p-0"><p class="m-1">{{ $award->subtitle }}</p></div>									 --}}
+										</div>
+										@endforeach
+
+									</div>								
 									<p class="judul2 pb-1"><strong>Associates</strong></p>
 									<p class="pb-1">Lu Sheng / 卢生, Associate Partner</p>			
 
 								</div>
-								<div class="col-lg-7">
-									<div class="row"><p class="judul2 mb-0 px-2"><strong>Competition Awards</strong></p></div>
-									<div class="row">
-										
-										@foreach ($dataAward as $index => $award)
-										<div class="awardthumbnail col-lg-6 p-2">
-											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ ++$index }})" />
-											<div class="award text-center p-0 mb-1"><p class="m-0">{{ $award->title }}</p></div>
-											<div class="award text-center p-0"><p class="m-1">{{ $award->subtitle }}</p></div>									
-										</div>
-										<div class="award{{ $index }} col-12 p-2" style="display : none;">
-											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
-											<div class="award text-center p-0 mb-1"><p class="m-0">{{ $award->title }}</p></div>
-											<div class="award text-center p-0"><p>{{ $award->subtitle }}</p></div>									
-										</div>
-										@endforeach
-
-									</div>
+								@foreach ($dataAward as $index => $award)
+								<div class="award{{ ++$index }} col-12 p-2" style="display : none;">
+									<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
+									<div class="award text-center p-0 mb-1"><p class="m-0">{{ $award->subtitle }}</p></div>
+									{{-- <div class="award text-center p-0"><p>{{ $award->subtitle }}</p></div>									 --}}
 								</div>
+								@endforeach
 							</div>
 						</div>
 					</div>

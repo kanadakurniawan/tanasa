@@ -337,7 +337,7 @@ display: none;
 	margin-bottom:20px;
 }
 .alamat p{
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 0px;
     line-height: 200%;
 	
@@ -349,7 +349,7 @@ display: none;
 	background-color:#fff;
 }
 #header #header-wrap #logo {
-    float: left;
+    /* float: left; */
     font-size: 28px;
     position: relative;
     z-index: 1;
@@ -368,9 +368,14 @@ display: none;
 .judul>a:focus  {
     text-decoration: none;
 }
+@font-face {
+    font-family: "garmond";
+    src: url("{{ asset('frontend/fonts/garmond.ttf') }}");
+}
 .judul>a{
     font-size:14px; margin:auto; padding:auto;letter-spacing: 1px;
-    font-weight: 900;
+    font-weight: 800;
+    font-family: 'garmond', serif;
 }
 #header #header-wrap {
     border-bottom: 0px solid #eeeeee;
@@ -431,7 +436,7 @@ table {
   } */
 .modal-backdrop {background-color:rgb(255, 255, 255);opacity:0.5 !important;}
 .row .award p{
-    font-size: 9px;
+    font-size: 13px;
     line-height: 11px;
 }
 .judul-portofolio>small{
@@ -440,6 +445,8 @@ table {
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     #tulisan ,.tulisan p{  
-        font-size:11px;
+        font-size:12px;
     }
 }
+
+

@@ -83,28 +83,28 @@ class DatabaseSeeder extends Seeder
         
         Award::create([
             'file_name' => 'a-jonusas-radvilla',
-            'title' => 'Jonušas Radvila Palace Art Museum',
-            'subtitle' => 'Vilnius, 2021 [Finalist]'
+            'title' => 'Jonušas Radvila',
+            'subtitle' => 'Jonušas Radvila Palace Art Museum, Vilnius, 2021 [Finalist]'
         ]);
         Award::create([
             'file_name' => 'b-dayang',
-            'title' => 'DaYang Mountain Traffic System',
-            'subtitle' => 'SuZhou, 2018 [Finalist]'
+            'title' => 'DaYang Pedestrian',
+            'subtitle' => 'DaYang Mountain Traffic System, SuZhou, 2018 [Finalist]'
         ]);
         Award::create([
             'file_name' => 'c-yeouinaru',
-            'title' => 'Yeouinaru Ferry Terminal',
-            'subtitle' => 'Seoul, 2017 [3rd Prize]'
+            'title' => 'Yeouinaru Terminal',
+            'subtitle' => 'Yeouinaru Ferry Terminal, Seoul, 2017 [3rd Prize]'
         ]);
         Award::create([
             'file_name' => 'd-language',
-            'title' => 'Museum of World Writing',
-            'subtitle' => 'SongDo, 2017 [4th Prize]'
+            'title' => 'Museum of Writing',
+            'subtitle' => 'Museum of World Writing, SongDo, 2017 [4th Prize]'
         ]);
         Award::create([
             'file_name' => 'e-varna',
-            'title' => 'Varna Public Library, 2015',
-            'subtitle' => '[Finalist]'
+            'title' => 'Varna Public Library',
+            'subtitle' => 'Varna Public Library, 2015 [Finalist]'
         ]);
     }
 }
