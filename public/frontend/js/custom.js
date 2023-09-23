@@ -1,9 +1,5 @@
-// window.onload = function(){ 
-// 	var tinggi03 = $(".slides").outerHeight(true); 	
-//     var h = window.innerHeight-180;
-// 	var marginatas = (h-tinggi03)/2-20;
-// 	document.getElementById("slides").style.marginTop = marginatas + "px";
-// };
+var portofolionya; 
+var awardnya; 
 function sembunyikan() {
     var x = 2000;
     $('#slides').each(function(index) {
@@ -23,6 +19,38 @@ function sembunyikan() {
             $(this).hide();
         }
     });   
+
+    var z = ".porto"+portofolionya;
+    var x = 2000;
+    $.cookie("z", z);
+    $.cookie("x", x);
+    $(z).each(function(index) {
+        $(this).hide();
+    });
+    $('.portothumbnail').each(function(index) {
+        $(this).fadeIn(x);
+    });  
+
+    var r = ".award"+awardnya;
+    $(r).each(function(index) {
+        $(this).hide();
+        // if ($(this).css('display') == 'none') {
+        //     $(this).fadeIn(x);
+        // }
+        // else {
+        //     $(this).hide();
+        // }
+    });
+
+    $('.awardthumbnail').each(function(index) {
+        $(this).fadeIn(x);
+        // if ($(this).css('display') == 'none') {
+        //     $(this).fadeIn(x);
+        // }
+        // else {
+        //     $(this).hide();
+        // }
+    });    
 }
 $(document).ready(function(){ // better to use $(document).ready(function(){
     $('#logo').on('click touchstart', function() {
@@ -90,6 +118,7 @@ new CustomSlider({
 
 
 function sembunyikanAward(w) {
+    awardnya = w;
     var z = ".award"+w;
     var x = 2000;
     $(z).each(function(index) {
@@ -111,6 +140,7 @@ function sembunyikanAward(w) {
     });    
 }
 function sembunyikanPorto(w) {
+    portofolionya = w;
     var z = ".porto"+w;
     var x = 2000;
     $.cookie("z", z);

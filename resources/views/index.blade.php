@@ -54,11 +54,11 @@
 							
 						</div>
 						<div id="tulisan" style="display : none;">
-							<div class="row text-justify mt-1">
+							<div class="row text-justify mt-2">
 								<div class="awardthumbnail col-12 tulisan px-2">
 									<p class="judul2 pb-1"><strong>Profile</strong></p>
 									<p class="pb-1">Davin Tanasa attained Master of Architecture at University of Melbourne in 2010. Prior to office establishment in 2015, worked at various offices in Melbourne, Singapore and Shanghai. Worked at Arata Isozaki 磯崎新 + HuQian 胡倩 Partners on the construction of Harbin Music Hall in 2014. In 2017 awarded 3rd Prize for &lsquo;Yeouinaru Ferry Terminal&rsquo; in Seoul, jury chaired by Alejandro Zaera-Polo and Ryue Nishizawa 西沢立衛; and awarded 4th Prize for &lsquo;National Museum of World Writing&rsquo; in Songdo, jury chaired by Odile Decq. &nbsp;</p>	
-									<p class="judul2 pb-1"><strong>Competition Awards</strong></p>
+									<p class="judul2 pb-1 pt-5"><strong>Competition Awards</strong></p>
 									
 									<div class="row px-2">
 										
@@ -71,7 +71,7 @@
 										@endforeach
 
 									</div>								
-									<p class="judul2 pb-1"><strong>Associates</strong></p>
+									<p class="judul2 pb-1 pt-5"><strong>Associates</strong></p>
 									<p class="pb-1">Lu Sheng / 卢生, Associate Partner</p>			
 
 								</div>
