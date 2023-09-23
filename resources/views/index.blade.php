@@ -79,15 +79,15 @@
 								</div>
 								@foreach ($dataAward as $index => $award)
 								<div class="award{{ ++$index }} col-10 p-2" style="display : none;">
-									<div class="row">
+									{{-- <div class="row">
 										<div class="col-1"></div>
-										<div class="col-10">
+										<div class="col-10"> --}}
 											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
 											<div class="award-thumbnail text-center p-1 mb-1 mt-2"><p class="m-0">{{ $award->subtitle }}</p></div>
 
-										</div>
+										{{-- </div>
 										<div class="col-1"></div>
-									</div>
+									</div> --}}
 									{{-- <div class="award text-center p-0"><p>{{ $award->subtitle }}</p></div>									 --}}
 								</div>
 								@endforeach
