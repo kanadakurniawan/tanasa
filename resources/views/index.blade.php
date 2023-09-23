@@ -41,11 +41,11 @@
 								<div class="portothumbnail col-3 p-3">
 									<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ ++$index }})" />								
 								</div>
-								<div class="porto{{ $index }} row p-2 mt-4" style="display : none;">
+								<div class="porto{{ $index }} row p-4 mt-4" style="display : none;">
 									<div class="col-1"></div>
 									<div class="col-10">
 										<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ $index }})"/>									
-										<div class="text-center p-2 mt-2 judul-portofolio">{{ $portfolio->title }}</div>			
+										<div class="text-center p-2 mt-3 judul-portofolio">{{ $portfolio->title }}</div>			
 									</div>
 									<div class="col-1"></div>
 								</div>
