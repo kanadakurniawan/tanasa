@@ -28,7 +28,7 @@
                     <div class="sidebar col-md-1">
 					
                     </div>
-                    <div class="content col-md-10"> 
+                    <div class="content col-md-10 p-2"> 
 						<div id="slides">
 							<!-- Button trigger modal -->
 							<div class="row">
