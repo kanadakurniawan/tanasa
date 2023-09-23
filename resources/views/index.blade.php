@@ -41,7 +41,7 @@
 								<div class="portothumbnail col-3 p-3">
 									<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ ++$index }})" />								
 								</div>
-								<div class="porto{{ $index }} row p-4 mt-4" style="display : none;">
+								<div class="porto{{ $index }} row p-4 mt-5" style="display : none;">
 									<div class="col-1"></div>
 									<div class="col-10">
 										<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ $index }})"/>									
