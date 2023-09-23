@@ -45,7 +45,7 @@
 									<div class="col-1"></div>
 									<div class="col-10">
 										<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ $index }})"/>									
-										<div class="text-center p-2 mt-3 judul-portofolio">{{ $portfolio->title }}</div>			
+										<div class="text-center p-2 mt-4 judul-portofolio">{{ $portfolio->title }}</div>			
 									</div>
 									<div class="col-1"></div>
 								</div>
