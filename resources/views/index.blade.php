@@ -41,11 +41,11 @@
 								<div class="portothumbnail col-3 p-3">
 									<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ ++$index }})" />								
 								</div>
-								<div class="porto{{ $index }} row p-2" style="display : none;">
+								<div class="porto{{ $index }} row p-2 mt-2" style="display : none;">
 									<div class="col-1"></div>
 									<div class="col-10">
 										<img class="img-fluid" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" onclick="sembunyikanPorto({{ $index }})"/>									
-										<div class="text-center p-2 judul-portofolio">{{ $portfolio->title }}</div>			
+										<div class="text-center p-2 mt-2 judul-portofolio">{{ $portfolio->title }}</div>			
 									</div>
 									<div class="col-1"></div>
 								</div>
@@ -81,7 +81,7 @@
 										<div class="col-1"></div>
 										<div class="col-10">
 											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
-											<div class="award-thumbnail text-center p-0 mb-1 mt-2"><p class="m-0">{{ $award->subtitle }}</p></div>
+											<div class="award-thumbnail text-center p-1 mb-1 mt-2"><p class="m-0">{{ $award->subtitle }}</p></div>
 
 										</div>
 										<div class="col-1"></div>
