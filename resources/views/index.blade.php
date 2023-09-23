@@ -67,7 +67,7 @@
 										@foreach ($dataAward as $index => $award)
 										<div class="col p-2">
 											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ ++$index }})" />
-											<div class="award text-center p-0 mb-1 mt-2"><p class="m-0">{{ $award->title }}</p></div>
+											<div class="award text-center p-0 mb-1 mt-4"><p class="m-0">{{ $award->title }}</p></div>
 											{{-- <div class="award text-center p-0"><p class="m-1">{{ $award->subtitle }}</p></div>									 --}}
 										</div>
 										@endforeach
