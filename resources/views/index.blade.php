@@ -23,13 +23,13 @@
         <!-- Content -->
         <section id="page-content" class="sidebar-both pb-0">
             <div class="container mt-3 ">
-                <div class="row mt-5 pt-3">
+                <div class="row mt-3 pt-3">
                     <!-- Sidebar-->
                     <div class="sidebar col-md-1">
 					
                     </div>
                     <div class="content col-md-10 p-2"> 
-						<div id="slides" class="mt-1">
+						<div id="slides" class="mt-0">
 							<!-- Button trigger modal -->
 							<div class="row">
 								{{-- @foreach ($dataPortfolio as $index => $portfolio)
