@@ -11,7 +11,7 @@
         <!-- Header -->
         <header id="header" class="header-logo-center header-no-sticky">
             <div id="header-wrap">
-                <div class="container pt-1"> 
+                <div class="container pt-2"> 
                     <div  class="judulatas mt-5 text-center" onclick="sembunyikan()">
                         <div class="judul"><a href="#"><strong>TANASA & ASSOCIATES</strong></a></div>
                     </div>
@@ -57,8 +57,7 @@
 							<div class="row text-justify mt-1">
 								<div class="awardthumbnail col-12 tulisan px-2">
 									<p class="judul2 pb-1"><strong>Profile</strong></p>
-									<p class="pb-1">Davin Tanasa attained Master of Architecture at University of Melbourne in 2010. Prior to office establishment in 2015, worked at various offices in Melbourne, Singapore and Shanghai. Worked at Arata Isozaki 磯崎新 + HuQian 胡倩 Partners on the construction of Harbin Music Hall in 2014. &nbsp;</p>
-									<p class="pb-1">In 2017 awarded 3rd Prize for &lsquo;Yeouinaru Ferry Terminal&rsquo; in Seoul, jury chaired by Alejandro Zaera-Polo and Ryue Nishizawa 西沢立衛; and awarded 4th Prize for &lsquo;National Museum of World Writing&rsquo; in Songdo, jury chaired by Odile Decq. &nbsp;</p>	
+									<p class="pb-1">Davin Tanasa attained Master of Architecture at University of Melbourne in 2010. Prior to office establishment in 2015, worked at various offices in Melbourne, Singapore and Shanghai. Worked at Arata Isozaki 磯崎新 + HuQian 胡倩 Partners on the construction of Harbin Music Hall in 2014. In 2017 awarded 3rd Prize for &lsquo;Yeouinaru Ferry Terminal&rsquo; in Seoul, jury chaired by Alejandro Zaera-Polo and Ryue Nishizawa 西沢立衛; and awarded 4th Prize for &lsquo;National Museum of World Writing&rsquo; in Songdo, jury chaired by Odile Decq. &nbsp;</p>	
 									<p class="judul2 pb-1"><strong>Competition Awards</strong></p>
 									
 									<div class="row px-2">
@@ -78,8 +77,15 @@
 								</div>
 								@foreach ($dataAward as $index => $award)
 								<div class="award{{ ++$index }} col-12 p-2" style="display : none;">
-									<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
-									<div class="award text-center p-0 mb-1 mt-2"><p class="m-0">{{ $award->subtitle }}</p></div>
+									<div class="row">
+										<div class="col-1"></div>
+										<div class="col-10">
+											<img class="img-fluid mb-1" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
+											<div class="award-thumbnail text-center p-0 mb-1 mt-2"><p class="m-0">{{ $award->subtitle }}</p></div>
+
+										</div>
+										<div class="col-1"></div>
+									</div>
 									{{-- <div class="award text-center p-0"><p>{{ $award->subtitle }}</p></div>									 --}}
 								</div>
 								@endforeach
@@ -88,11 +94,7 @@
 					</div>
 					
 					<div class="col-1"></div>
-					<div class="sidebar col-md-3">
-                        <div class="pinOnScroll">
-
-                        </div>
-                    </div>
+					
 					
 				</div>	
 			</div>	

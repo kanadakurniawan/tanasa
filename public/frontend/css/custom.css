@@ -276,7 +276,7 @@
 
 #tulisan>p {
   margin-bottom: 0em; 
-  font-size: 13px;
+  font-size: 14px;
   line-height: 23px;
   text-align: justify;
   color:#000;
@@ -373,7 +373,7 @@ display: none;
     src: url("{{ asset('frontend/fonts/garmond.ttf') }}");
 }
 .judul>a{
-    font-size:14px; margin:auto; padding:auto;letter-spacing: 1px;
+    font-size:13px; margin:auto; padding:auto;letter-spacing: 1px;
     font-weight: 800;
     font-family: 'garmond', serif;
 }
@@ -391,11 +391,11 @@ display: none;
 	
 }
 #tulisan ,.tulisan p{  
-    margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;font-size:13px;line-height:150%;
+    margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;margin-left:0cm;font-size:14px;line-height:150%;
 }
 
 .judul2>strong{
-    font-size:13px;
+    font-size:14px;
 }
 
 table {
@@ -435,8 +435,13 @@ table {
     display: true;
   } */
 .modal-backdrop {background-color:rgb(255, 255, 255);opacity:0.5 !important;}
+.row .award-thumbnail p{
+    font-size: 14px;
+    line-height: 11px;
+}
+
 .row .award p{
-    font-size: 13px;
+    font-size: 14px;
     line-height: 11px;
 }
 .judul-portofolio>small{
