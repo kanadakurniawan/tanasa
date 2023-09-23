@@ -29,7 +29,7 @@
 					
                     </div>
                     <div class="content col-md-10 p-2"> 
-						<div id="slides mt-1">
+						<div id="slides" class="mt-1">
 							<!-- Button trigger modal -->
 							<div class="row">
 								{{-- @foreach ($dataPortfolio as $index => $portfolio)
