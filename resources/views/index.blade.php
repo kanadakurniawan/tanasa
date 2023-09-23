@@ -82,7 +82,7 @@
 									<div class="row">
 										<div class="col-1"></div>
 										<div class="col-10">
-											<img class="img-fluid mb-1 p-3" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
+											<img class="img-fluid mb-1 p-3 mt-5" src="frontend/images/award/{{ $award->file_name }}.jpg" onclick="sembunyikanAward({{ $index }})"/>
 											<div class="award-thumbnail text-center p-1 mb-1 mt-2"><p class="m-0">{{ $award->subtitle }}</p></div>
 
 										</div>
