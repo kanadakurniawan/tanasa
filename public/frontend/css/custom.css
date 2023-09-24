@@ -449,12 +449,9 @@ table {
     font-size: 15px;
 }
 
-@media only screen 
-  and (min-device-width: 360px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
+@media only screen and (min-device-width: 360px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
     #row-slides{
-        margin-top: -20px;
+        margin-top: -200px;
         padding-top: -20px;
     }
 }
