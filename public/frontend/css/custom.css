@@ -449,7 +449,7 @@ table {
 @media all and (max-width: 768px) {
     #row-slides .row{
         margin-top: -20px;
-        padding-top: -20px;
+        padding-top: -30px;
     }
     .judulatas {
         margin-top: 0px;
