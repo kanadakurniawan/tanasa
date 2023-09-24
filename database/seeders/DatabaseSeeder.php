@@ -103,7 +103,7 @@ class DatabaseSeeder extends Seeder
         ]);
         Award::create([
             'file_name' => 'e-varna',
-            'title' => 'Varna Public Library',
+            'title' => 'Varna Library',
             'subtitle' => 'Varna Public Library, 2015 [Finalist]'
         ]);
     }

@@ -478,7 +478,10 @@ table {
     .award{
         margin-top: 7px!important;
     }
-    .row .award p {
+    .row .award p, .row .award-thumbnail p {
         line-height: 14px;
+    }
+    .row .award-thumbnail p {
+        padding: 0px 30px;
     }
 }
