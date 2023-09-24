@@ -466,4 +466,10 @@ table {
     .alamat-baris1>p{
         line-height: 120%;
     }
+    .awardthumbnail{
+        font-size: 12px;
+    }
+    .judul2{
+        margin-top: 0px;
+    }
 }
