@@ -466,7 +466,7 @@ table {
     .alamat-baris1>p{
         line-height: 120%;
     }
-    .awardthumbnail{
+    #tulisan ,.tulisan p{  
         font-size: 12px;
     }
     .judul2{
