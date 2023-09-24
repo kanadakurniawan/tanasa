@@ -4,7 +4,7 @@
 	@include('partials.head')
 </head>
 
-<body data-icon="11">
+<body data-icon-color="#fff">
 
     <!-- Wrapper -->
     <div id="wrapper">
