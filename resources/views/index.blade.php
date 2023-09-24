@@ -31,7 +31,7 @@
                     <div class="content col-md-10 p-2"> 
 						<div id="slides" class="mt-0">
 							<!-- Button trigger modal -->
-							<div class="row">
+							<div id="porto-slides" class="row">
 								{{-- @foreach ($dataPortfolio as $index => $portfolio)
 								<div class="col-3 p-1">
 									<img class="img-fluid" data-bs-toggle="modal" data-bs-target="#exampleModal{{ ++$index }}" src="frontend/images/portfolio/{{ $portfolio->file_name }}.jpg" />									

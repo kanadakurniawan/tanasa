@@ -488,4 +488,8 @@ table {
     .row .award-thumbnail p {
         padding: 0px 30px;
     }
+    #porto-slides{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
