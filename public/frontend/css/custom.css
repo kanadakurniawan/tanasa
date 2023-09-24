@@ -462,4 +462,7 @@ table {
     .alamat {
         margin-bottom: 10px;
     }
+    .alamat-baris1>p{
+        line-height: 120%;
+    }
 }
