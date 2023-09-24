@@ -478,4 +478,7 @@ table {
     .award{
         margin-top: 7px!important;
     }
+    .row .award p {
+        line-height: 14px;
+    }
 }
