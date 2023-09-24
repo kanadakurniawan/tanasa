@@ -448,8 +448,8 @@ table {
 
 @media all and (max-width: 768px) {
     #row-slides .row{
-        margin-top: -20px;
-        padding-top: -40px;
+        margin-top: -20px!important;
+        padding-top: -40px!important;
     }
     .judulatas {
         height: 80px;
@@ -466,10 +466,10 @@ table {
     .alamat-baris1>p{
         line-height: 120%;
     }
-    #tulisan ,.tulisan p{  
+    #tulisan .tulisan p, .judul2>strong{  
         font-size: 12px;
     }
     .judul2{
-        margin-top: 0px;
+        margin-top: 0px!important;
     }
 }
