@@ -452,8 +452,14 @@ table {
         padding-top: -20px;
     }
     .judulatas {
-        margin-top: opx;
+        margin-top: 0px;
         margin-bottom: 0px;
         padding-bottom:0px; 
+    }
+    .porto-besar{
+        margin-top: 0px;
+    }
+    .alamat {
+        margin-bottom: 10px;
     }
 }
