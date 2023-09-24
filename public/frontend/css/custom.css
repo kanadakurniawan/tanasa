@@ -454,8 +454,8 @@ table {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     #row-slides{
-        margin-top: 0px;
-        padding-top: 0px;
+        margin-top: -20px;
+        padding-top: -20px;
     }
 }
 
