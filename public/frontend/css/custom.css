@@ -461,7 +461,6 @@ table {
         margin-top: 0px;
     }
     .alamat {
-        margin-top: 40px;
         margin-bottom: 0px;
     }
     .alamat-baris1>p{
@@ -469,6 +468,9 @@ table {
     }
     #tulisan .tulisan p, .judul2>strong{  
         font-size: 12px;
+    }
+    #tulisan{
+        margin-bottom: 40px!important;
     }
     .judul2{
         margin-top: 0px!important;
