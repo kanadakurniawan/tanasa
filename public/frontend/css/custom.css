@@ -445,14 +445,13 @@ table {
     font-size: 15px;
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
+
+@media all and (max-width: 768px) {
     #row-slides .row{
-        margin-top: -200px;
+        margin-top: -20px;
         padding-top: -20px;
     }
     .judulatas {
         padding-bottom:0px; 
     }
 }
-
-

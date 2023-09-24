@@ -12,7 +12,7 @@
         <header id="header" class="header-logo-center header-no-sticky">
             <div id="header-wrap">
                 <div class="container pt-2"> 
-                    <div  class="d-sm-none d-md-none d-lg-block judulatas mt-5 text-center" onclick="sembunyikan()">
+                    <div  class="judulatas mt-5 text-center" onclick="sembunyikan()">
                         <div class="judul"><a href="#"><strong>TANASA & ASSOCIATES</strong></a></div>
                     </div>
                 </div>
