@@ -452,6 +452,8 @@ table {
         padding-top: -20px;
     }
     .judulatas {
+        margin-top: opx;
+        margin-bottom: 0px;
         padding-bottom:0px; 
     }
 }
