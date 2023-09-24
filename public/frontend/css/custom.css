@@ -413,11 +413,7 @@ table {
 	vertical-align: top;
 	width:40px
 }
-@media (min-width: 992px){
-.container {
-    width: 962px;
-}
-}
+
 
 .modal-content {
     position: relative;
@@ -450,9 +446,12 @@ table {
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) { 
-    #row-slides{
+    #row-slides .row{
         margin-top: -200px;
         padding-top: -20px;
+    }
+    .judulatas {
+        padding-bottom:0px; 
     }
 }
 
