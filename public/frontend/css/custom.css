@@ -376,6 +376,7 @@ display: none;
     font-size:13px; margin:auto; padding:auto;letter-spacing: 1px;
     font-weight: 800;
     font-family: 'garmond', serif;
+    color: #000;
 }
 #header #header-wrap {
     border-bottom: 0px solid #eeeeee;
