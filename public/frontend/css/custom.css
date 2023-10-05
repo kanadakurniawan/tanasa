@@ -465,7 +465,7 @@ table {
         margin-bottom: 0px;
     }
     .alamat-baris1>p{
-        line-height: 120%;
+        line-height: 160%;
     }
     #tulisan .tulisan p, .judul2>strong{  
         font-size: 12px;
@@ -489,7 +489,7 @@ table {
         padding: 0px 30px;
     }
     #porto-slides{
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
