@@ -22,7 +22,7 @@
 
         <!-- Content -->
         <section id="page-content" class="sidebar-both pb-0">
-            <div class="container mt-5">
+            <div class="container mt-3 ">
                 <div id="row-slides" class="row mt-3 pt-3">
                     <!-- Sidebar-->
                     <div class="sidebar col-md-1">
